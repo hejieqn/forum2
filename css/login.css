@@ -1,0 +1,21 @@
+.Login-socialLogin {
+    display: flex;
+    text-align: left;
+}
+.Login-socialLogin .Login-socialButtonGroup{
+    display: flex;
+    flex: 1;
+}
+.Login-socialLogin .Login-socialButtonGroup .Login-socialButton{
+    flex: 1;
+    cursor: pointer;
+}
+.Login-socialLogin .Login-socialButtonGroup .Login-socialButton svg{
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+.Login-socialLogin .Login-label{
+    display: inline-flex;
+    width: 42%;
+    font-size: 15px;
+}
