@@ -1,0 +1,39 @@
+.item-subscription .dropdown-menu .iconfont {
+    float: left;
+}
+.SimilarQuestions-item a{
+    color: #111;
+}
+.SimilarQuestions-item a:hover{
+    color: #f36322;
+}
+.SimilarQuestions-item .DiscussionListItem-count{
+    float: none;
+    background: none;
+}
+.SimilarQuestions-item{
+    padding: 5px;
+}
+.SimilarQuestions-title{
+    display: none;
+}
+@media (min-width: 768px){
+    .SimilarQuestions{
+        margin-top: 20px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 1px 3px rgba(26,26,26,.3);
+        box-shadow: 0 1px 3px rgba(26,26,26,.3);
+    }
+    .SimilarQuestions-title{
+        padding: 0 20px;
+        height: 45px;
+        line-height: 45px;
+        font-weight: bold;
+        border-bottom: 1px solid #e7edf3;
+        font-size: 14px;
+        display: block;
+    }
+    .SimilarQuestions-list{
+        padding: 10px 12px;
+    }
+}

@@ -13,16 +13,15 @@
     <title>Fixed Top Navbar Example for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="../css/demo.css" rel="stylesheet">
-    <link href="../css/login.css" rel="stylesheet">
-    <link href="http://at.alicdn.com/t/font_1500232_cc139rqdc3i.css"  rel="stylesheet"></link>
+    <link href="http://at.alicdn.com/t/font_1500232_o4cy2ygg16i.css"  rel="stylesheet"></link>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
 
     <!-- Custom styles for this template -->
-    <link href="navbar-fixed-top.css" rel="stylesheet">
+    <!-- <link href="navbar-fixed-top.css" rel="stylesheet"> -->
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -56,8 +55,14 @@
                     </h1>
                     <div id="header-primary" class="Header-primary">
                         <ul class="Header-controls">
-                            <li class="item-link1"><a class="LinksButton Button Button--link" target="_blank"
-                                    href="https://flarumchina.org" title="首页">首页</a></li>
+                            <li class="item-link1">
+                                <a class="LinksButton Button Button--link active" target="_blank" href="https://flarumchina.org" title="首页">首页</a>
+                                <ul class="sub_menu">
+                                    <li class="sub_menu_item"><a class="LinksButton Button Button--link">1234</a></li>
+                                    <li class="sub_menu_item"><a class="LinksButton Button Button--link">1234</a></li>
+                                    <li class="sub_menu_item"><a class="LinksButton Button Button--link">1234</a></li>
+                                </ul>
+                            </li>
                             <li class="item-link4"><a class="LinksButton Button Button--link" target="_blank"
                                     href="https://flarumchina.org/docs/" title="文档">文档</a></li>
                             <li class="item-link3"><a class="LinksButton Button Button--link" target="_blank"
@@ -70,21 +75,23 @@
                         <ul class="Header-controls">
                             <li class="item-search">
                                 <div class="Search ">
-                                    <div class="Search-input"><input class="FormControl" type="search"
-                                            placeholder="搜索其实很简单"></div>
+                                    <div class="Search-input">
+                                        <i class="iconfont iconRectangleCopy"></i>
+                                        <input class="FormControl" type="search" placeholder="搜索其实很简单">
+                                    </div>
                                     <ul class="Dropdown-menu Search-results"></ul>
-                                </div>
+                                 </div>
                             </li>
                             <li class="item-notifications">
                                 <div class="ButtonGroup Dropdown dropdown NotificationsDropdown itemCount0"><button
                                         class="Dropdown-toggle Button Button--flat" data-toggle="dropdown"
-                                        title="消息通知"><i class="icon fa fa-bell Button-icon"></i><span
+                                        title="消息通知"><i class="iconfont iconicon-xiaoxi Button-icon"></i><span
                                             class="Button-label">消息通知</span></button>
                                     <div class="Dropdown-menu Dropdown-menu--right"></div>
                                 </div>
                             </li>
                             <li class="item-logIn">
-                                <button class="Button Button--link" type="button" title="Log In" onclick="login()">
+                                <button class="Button Button--link login-btn" type="button" title="Log In" >
                                     <span class="Button-label">Log In</span>
                                 </button>
                             </li>
@@ -99,15 +106,15 @@
                                     <ul class="Dropdown-menu dropdown-menu Dropdown-menu--right">
                                         <li class="item-profile"><a href="/u/1098" active="false" class=" hasIcon"
                                                 type="button" title="我的资料"><i
-                                                    class="icon fa fa-user Button-icon"></i><span
+                                                    class="iconfont iconseeuser Button-icon"></i><span
                                                     class="Button-label">我的资料</span></a></li>
                                         <li class="item-settings"><a href="/settings" active="false" class=" hasIcon"
                                                 type="button" title="个人设置"><i
-                                                    class="icon fa fa-cog Button-icon"></i><span
+                                                    class="iconfont iconUsersSettings Button-icon"></i><span
                                                     class="Button-label">个人设置</span></a></li>
                                         <li class="Dropdown-separator"></li>
                                         <li class="item-logOut"><button class=" hasIcon" type="button" title="登出"><i
-                                                    class="icon fa fa-sign-out Button-icon"></i><span
+                                                    class="iconfont icontuichu Button-icon"></i><span
                                                     class="Button-label">登出</span></button></li>
                                     </ul>
                                 </div>
@@ -122,7 +129,7 @@
                 <div class="IndexPage">
                     <header class="Hero WelcomeHero">
                         <div class="container"><button class="Hero-close Button Button--icon Button--link hasIcon"
-                                type="button"><i class="icon fa fa-times Button-icon"></i></button>
+                                type="button"><i class="iconfont iconguanbi Button-icon"></i></button>
                             <div class="containerNarrow">
                                 <h2 class="Hero-title">欢迎来到 TowerLight</h2>
                                 <div class="Hero-subtitle">新手来到请看 <a href="/d/4">新手必读</a><br><a href="/d/433">QQ群 -
@@ -153,13 +160,13 @@
                                                             class="icon fa fa-comments-o Button-icon"></i><span
                                                             class="Button-label">所有话题</span></a></li>
                                                 <li class="item-following"><a href="/following" active="false"
-                                                        class=" hasIcon" type="button" title="关注"><i
-                                                            class="icon fa fa-star Button-icon"></i><span
+                                                        class=" hasIcon" type="button" title="关注">
+                                                        <i class="iconfont iconguanzhu Button-icon"></i><span
                                                             class="Button-label">关注</span></a></li>
-                                                <li class="item-tags"><a href="/tags" active="false" class=" hasIcon"
-                                                        type="button" title="分类"><i
-                                                            class="icon fa fa-th-large Button-icon"></i><span
-                                                            class="Button-label">分类</span></a></li>
+                                                <li class="item-tags">
+                                                    <a href="/tags" active="false" class=" hasIcon" type="button" title="分类">
+                                                        <i class="iconfont iconleimupinleifenleileibie2  Button-icon"></i>
+                                                        <span class="Button-label">分类</span></a></li>
                                                 <li class="Dropdown-separator"></li>
                                                 <li class="item-tag1"><a class="TagLinkButton hasIcon "
                                                         href="/t/flarumchina" style="" title="FlarumChina黑板报"><span
@@ -204,12 +211,14 @@
                                         <li class="item-sort">
                                             <div class="ButtonGroup Dropdown dropdown  itemCount4"><button
                                                     class="Dropdown-toggle Button" data-toggle="dropdown"><span
-                                                        class="Button-label">最新回复</span><i
-                                                        class="icon fa fa-caret-down Button-caret"></i></button>
+                                                        class="Button-label">最新回复</span>
+                                                        <i class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                 <ul class="Dropdown-menu dropdown-menu ">
-                                                    <li class=""><button active="true" class=" hasIcon" type="button"
-                                                            title="最新回复"><i class="icon fa fa-check Button-icon"></i><span
-                                                                class="Button-label">最新回复</span></button></li>
+                                                    <li class="">
+                                                        <button active="true" class=" hasIcon" type="button" title="最新回复">
+                                                            <i class="iconfont iconicon_sanjiaoxing Button-icon"></i>
+                                                            <span class="Button-label">最新回复</span></button>
+                                                    </li>
                                                     <li class=""><button active="false" class=" hasIcon" type="button"
                                                             title="热门话题"><span class="Button-label">热门话题</span></button>
                                                     </li>
@@ -226,9 +235,11 @@
                                     <ul class="IndexPage-toolbar-action">
                                         <li class="item-refresh"><button title="刷新" class="Button Button--icon hasIcon"
                                                 type="button"><i class="iconfont iconshuaxin"></i></button></li>
-                                        <li class="item-markAllAsRead"><button title="标记所有为已读"
-                                                class="Button Button--icon hasIcon" type="button"><i
-                                                    class="icon fa fa-check Button-icon"></i></button></li>
+                                        <li class="item-markAllAsRead">
+                                            <button title="标记所有为已读" class="Button Button--icon hasIcon" type="button">
+                                                <i class="iconfont icongou1 Button-icon"></i>
+                                            </button>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="DiscussionList">
@@ -239,10 +250,10 @@
                                                     class="ButtonGroup Dropdown dropdown DiscussionListItem-controls itemCount1">
                                                     <button
                                                         class="Dropdown-toggle Button Button--icon Button--flat Slidable-underneath Slidable-underneath--right"
-                                                        data-toggle="dropdown"><i
-                                                            class="icon fa fa-ellipsis-v Button-icon"></i><span
+                                                        data-toggle="dropdown">
+                                                        <i class="iconfont iconshenglve Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -250,7 +261,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic disabled"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content read"><a href="/u/1"
                                                         class="DiscussionListItem-author" title=""
                                                         data-original-title="houzhenhong 发布于 2018年2月15日"><img
@@ -296,7 +307,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -304,7 +315,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic disabled"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content read"><a href="/u/1"
                                                         class="DiscussionListItem-author" title=""
                                                         data-original-title="houzhenhong 发布于 2017年6月13日"><img
@@ -351,7 +362,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -359,7 +370,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic disabled"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content read"><a
                                                         href="/u/1097" class="DiscussionListItem-author"
                                                         title="josonvvvvv 发布于 3 小时前"
@@ -396,7 +407,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -404,7 +415,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/956" class="DiscussionListItem-author" title=""
                                                         data-original-title="simonzhd 发布于 2019-05-08"><img class="Avatar "
@@ -441,7 +452,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -449,7 +460,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1086" class="DiscussionListItem-author" title=""
                                                         data-original-title="steve 发布于 14 天前"><span class="Avatar "
@@ -482,7 +493,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -490,7 +501,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/928" class="DiscussionListItem-author" title=""
                                                         data-original-title="sewers 发布于 2019-09-04"><span class="Avatar "
@@ -527,7 +538,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -535,7 +546,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1061" class="DiscussionListItem-author" title=""
                                                         data-original-title="NCDWLQ 发布于 18 天前"><img class="Avatar "
@@ -571,7 +582,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -579,7 +590,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1065" class="DiscussionListItem-author" title=""
                                                         data-original-title="snacker 发布于 22 天前"><img class="Avatar "
@@ -613,7 +624,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -621,7 +632,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/968" class="DiscussionListItem-author" title=""
                                                         data-original-title="xiaoyu7111111 发布于 2019-05-07"><span
@@ -659,7 +670,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -667,7 +678,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1079" class="DiscussionListItem-author" title=""
                                                         data-original-title="wyfang 发布于 21 天前"><img class="Avatar "
@@ -703,7 +714,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -711,7 +722,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1078" class="DiscussionListItem-author" title=""
                                                         data-original-title="mark 发布于 21 天前"><span class="Avatar "
@@ -744,7 +755,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -752,7 +763,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1072" class="DiscussionListItem-author" title=""
                                                         data-original-title="yuanxiaoxie 发布于 24 天前"><span class="Avatar "
@@ -785,7 +796,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -793,7 +804,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1070" class="DiscussionListItem-author" title=""
                                                         data-original-title="Jack 发布于 1 个月前"><span class="Avatar "
@@ -829,7 +840,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -837,7 +848,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/474" class="DiscussionListItem-author" title=""
                                                         data-original-title="jjandxa 发布于 2017年10月16日"><img class="Avatar "
@@ -874,7 +885,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -882,7 +893,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1036" class="DiscussionListItem-author" title=""
                                                         data-original-title="abelzcf 发布于 2019-10-05"><span class="Avatar "
@@ -919,7 +930,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -927,7 +938,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/947" class="DiscussionListItem-author" title=""
                                                         data-original-title="JC_ProPlus 发布于 2019-07-13"><img class="Avatar "
@@ -964,7 +975,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -972,7 +983,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/803" class="DiscussionListItem-author" title=""
                                                         data-original-title="ait666 发布于 2019-06-06"><img class="Avatar "
@@ -1006,7 +1017,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -1014,7 +1025,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1" class="DiscussionListItem-author" title=""
                                                         data-original-title="houzhenhong 发布于 2017年2月3日"><img class="Avatar "
@@ -1051,7 +1062,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -1059,7 +1070,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1065" class="DiscussionListItem-author" title=""
                                                         data-original-title="snacker 发布于 2019-10-07"><img class="Avatar "
@@ -1097,7 +1108,7 @@
                                                         data-toggle="dropdown"><i
                                                             class="icon fa fa-ellipsis-v Button-icon"></i><span
                                                             class="Button-label"></span><i
-                                                            class="icon fa fa-caret-down Button-caret"></i></button>
+                                                            class="iconfont iconicon_sanjiaoxing Button-caret"></i></button>
                                                     <ul class="Dropdown-menu dropdown-menu ">
                                                         <li class="item-subscription"><button class=" hasIcon" type="button"
                                                                 title="关注"><i class="icon fa fa-star Button-icon"></i><span
@@ -1105,7 +1116,7 @@
                                                     </ul>
                                                 </div><a
                                                     class="Slidable-underneath Slidable-underneath--left Slidable-underneath--elastic"><i
-                                                        class="icon fa fa-check "></i></a>
+                                                        class="iconfont icongou1 "></i></a>
                                                 <div class="DiscussionListItem-content Slidable-content unread"><a
                                                         href="/u/1056" class="DiscussionListItem-author" title=""
                                                         data-original-title="james 发布于 2019-09-29"><span class="Avatar "
@@ -1184,8 +1195,9 @@
     <div id="alerts">
         <div class="AlertManager"></div>
     </div>
+    <div class="modal-backdrop fade"></div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
